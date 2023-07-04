@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumOfListFibonacy(x) {
+  var sum = 0;
+  var fib1 = 0 ; 
+  var fib2 = 1 ;
+  var i = 0
+  for (i = 0; i <= x; i++) {
+    sum += fib1;
+    var sumFib = fib1 + fib2;
+    fib1 = fib2;
+    fib2 = sumFib;
+  }
+  return sum;
+}
+console.log( sumOfListFibonacy(8))
+    </script>
+</body>
+</html>
